@@ -73,7 +73,7 @@ I've used containers and their configurations from my previous project as blue p
 CI/CD used in the project
 
 # Final words
-Project was fine to learn the basics of K8s and more importantly to find the right tools for the job. The yaml syntax continues to give me troubles as I do not find it intuitive. If I had more time for the project I could build a proxy and implement 0 time deployment, but unfortunalty I did not have the time and resources for that step.
+The aim of the project was to learn the basics of K8s and more importantly to find the right tools for the job. The yaml syntax continues to give me troubles as I do not find it intuitive. If I had more time for the project I could build a proxy and implement 0 time deployment, but unfortunalty I did not have the time and resources for that step.
 
 
 
