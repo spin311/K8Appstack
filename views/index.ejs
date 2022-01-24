@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <h1>BMI Calculator</h1>
+  <form method="post" action="/item/add">
+    <p>Name</p>
+    <input type="text" name="name">
+
+    <p>Height (in cm) </p>
+
+    <input type="number" name="height">
+
+    <p>Weight (in kg) </p>
+
+    <input type="number" name="weight"> 
+    <input type="submit" value="Add">
+
+  </form>
+  <h4>User Data:</h4>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>weight (kg)</th>
+      <th>height (cm)</th>
+      <th><bold>BMI</bold></th>
+      <th>date</th>
+    </tr>  
+    <% items.forEach(function(item) {%>
+      <tr>
+      <td><%= item.name%></td>
+      <td><%= item.weight %></td>
+      <td><%= item.height %></td>
+      <td><%= item.bmi.toFixed(2) %></td>
+      <td><%= item.date %></td>
+      </tr>
+      <% }); %> 
+  </table>  
+
+
+</body>
+
+</html>

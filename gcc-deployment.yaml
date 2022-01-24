@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose -f docker-compose.yml convert
+    kompose.version: 1.26.1 (a9d05d509)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: gcc
+  name: gcc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: gcc
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose -f docker-compose.yml convert
+        kompose.version: 1.26.1 (a9d05d509)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: gcc
+    spec:
+      containers:
+        - image: nginx
+          name: gcc
+          resources: {}
+      restartPolicy: Always
+status: {}
