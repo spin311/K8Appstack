@@ -39,7 +39,6 @@ The App service is now running!
 The aim of web service is to calculate (and save) your BMI together with its date and your name. You can input your height and weight, together with your name and the app will calculate your BMI and save it. Because the project uses volumes the data you give as input will be saved and accessible the next time you decide to use it. 
 
 # Solution and Software
-![cmd](pictures/cmd.png?raw=true "cmd")
 
 *Kompose*
 Biggest challenge personally was dealing with and fixing the yaml syntax. The project wasn't very difficult per say, but the challenge was finding the best tools for the job and for that some extensive research on the subject at hand had to be done.
