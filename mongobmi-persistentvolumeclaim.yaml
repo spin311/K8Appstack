@@ -3,8 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   creationTimestamp: null
   labels:
-    io.kompose.service: mongoBMI
-  name: mongoBMI
+    io.kompose.service: mongobmi
+  name: mongobmi
 spec:
   accessModes:
     - ReadWriteOnce

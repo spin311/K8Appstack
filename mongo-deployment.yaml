@@ -32,10 +32,10 @@ spec:
           resources: {}
           volumeMounts:
             - mountPath: /data/db
-              name: mongoBMI
+              name: mongobmi
       restartPolicy: Always
       volumes:
-        - name: mongoBMI
+        - name: mongobmi
           persistentVolumeClaim:
-            claimName: mongoBMI
+            claimName: mongobmi
 status: {}
