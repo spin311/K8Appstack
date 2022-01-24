@@ -1,6 +1,6 @@
 # K8Appstack
 
-I've recreated my last HomeWork (Appstack using DockerCompose) in Kubernetes.
+The aim of this project was to translate project that used docker compose to its K8 counterpart. I've used BMI calculator which I've build previously (accessable at https://github.com/spin311/Appstack) as starting point for this project. 
 
 ### *Requierments:*
 Make sure you have Docker (or VirtualBox) installed beforehand.
@@ -53,10 +53,11 @@ I've used minikube to run k8s locally. it is lightweight and easy to use, which 
 ![Solution](./pictures/baza.png?raw=true "Baza")
 
 *kubectl*
+I've used kubectl to perform kubernetes operations, as a client for Kubernetes API.
 
 ### Containers:
 
-The kubernetes stack uses four containers:
+The kubernetes stack I've created uses four containers:
 1. multistage container named app, which is the complex one, using nginx and gcc, used to send some data to server using gcc.
 
 
@@ -67,6 +68,7 @@ The kubernetes stack uses four containers:
 4. mongo-express for hosting the data used.
 I've used containers for persistant data.
 I've used containers and their configurations from my previous project as blue print for this one, changing properties and settings where necessary.
+Each container has its own (or even multiple) yaml file. A service yaml file was also needed where database/app communicates with a server. 
 
 ### CI/CD
 ![CI/CD](./pictures/CICD.png?raw=true "CI/CD")
